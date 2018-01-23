@@ -12,7 +12,7 @@ Like this project? Support the creator! It's always appreciated :)
 ## Features
 
 A brief list of current features, planned features and features I'm still dreaming up.
-###Features:
+### Features:
 
 * Simple creation and management of HTML5 canvases
 * Simple creation and management of shapes (circles and rectangles)
@@ -20,13 +20,13 @@ A brief list of current features, planned features and features I'm still dreami
 * Animation of shapes
 * Clear and consistent syntax
 
-###Planned short-term features:
+### Planned short-term features:
 * Transformations (scale, translate, rotate, skew)
 * More animations (scale, translate, rotate, skew)
 * Custom shapes and more built-in shapes
 * Gradients
 
-###Planned long-term features:
+### Planned long-term features:
 * Support for images
 * Physics and collisions
 
