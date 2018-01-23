@@ -41,7 +41,7 @@ Check out main.js. It contains a few examples of how to use the library.
 Currently, miniCanvasJS requires no dependencies. This may change in the future.
 
 ## Usage and code snippets
-This project was entirely written in ES6. You may transpile it to ES5 but I don't recommend it. I recommend you stick to ES6 yourself.
+This project was entirely written in ES6. You may transpile it to ES5 but I recommend sticking to ES6 as most major browsers support it and most of its features nowadays.
 ### Creating a canvas
 To get started, a canvas must be created.
 
@@ -82,7 +82,7 @@ let rectangle = new Rect({
     canvas: canvas
 });
 ```
-This returns a rectangle. Note: there are no default values configured for shapes in this version. It is of importance that you pass atleast the following parameters to your shape: width, height, x, y and the target canvas. Or in the case of the circle: radius, x, y and the target canvas.
+This returns a rectangle. Note: there are no default values configured for shapes in this version. It is of importance that you pass at least the following parameters to your shape: width, height, x, y and the target canvas. Or in the case of the circle: radius, x, y and the target canvas.
 
 To now draw this shape to your canvas, call draw() on your shape:
 
