@@ -10,8 +10,10 @@ Like this project? Support the creator! It's always appreciated :)
 * Ethereum address: 0x16A49febDe0c927BC942878e644ea35a18dcF6CF
 
 ## Features
+
 A brief list of current features, planned features and features I'm still dreaming up.
 ###Features:
+
 * Simple creation and management of HTML5 canvases
 * Simple creation and management of shapes (circles and rectangles)
 * Drawing and rendering shapes to HTML5 canvases
