@@ -1,4 +1,4 @@
-# miniCanvasJS v0.1.0
+# miniCanvasJS v0.2.0
 
 miniCanvasJS is a lightweight, compact canvas animation library written in native ES6. This is my first project of this size and complexity. Feedback and bug reports are appreciated.
 

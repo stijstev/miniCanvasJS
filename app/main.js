@@ -11,10 +11,6 @@ class App {
         this.cvs = new Canvas({
             width: 800, 
             height: 450, 
-            offScreen: {
-                mode: 'delete',
-                time: 7000
-            }
         });
         this.cvs.renderStart();
 
