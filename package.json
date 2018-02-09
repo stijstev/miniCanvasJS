@@ -1,0 +1,36 @@
+{
+  "name": "minicanvasjs",
+  "version": "0.1.0",
+  "description": "A small, lightweight javascript canvas library",
+  "main": "./app/es6/main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/stijstev/miniCanvasJS.git"
+  },
+  "author": "Stijn Stevens",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/stijstev/miniCanvasJS/issues"
+  },
+  "homepage": "https://github.com/stijstev/miniCanvasJS#readme",
+  "devDependencies": {
+    "browser-sync": "^2.23.6",
+    "gulp": "^3.9.1",
+    "webpack": "^3.10.0",
+    "webpack-stream": "^4.0.0"
+  },
+  "optionalDependencies": {
+    "babel-core": "^6.26.0",
+    "babel-preset-es2015": "^6.24.1",
+    "gulp-babel-minify": "^0.3.0",
+    "gulp-clean": "^0.4.0",
+    "gulp-concat": "^2.6.1",
+    "run-sequence": "^2.2.1"
+  },
+  "dependencies": {
+    "ajv": "^6.1.1"
+  }
+}
