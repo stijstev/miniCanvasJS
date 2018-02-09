@@ -18,11 +18,12 @@ class App {
         
         setInterval(() => {
             for (let i = 0; i < 5; i++) {
-                let shape = new Rect({
+                let shape = new Circle({
                     x: this.cvs.style.width / 2,
                     y: this.cvs.style.height / 2,
-                    width: 15,
-                    height: 15,
+                    // width: 15,
+                    // height: 15,
+                    radius: 20,
                     color: colors[Math.round(Math.random() * 3)],
                     canvas: this.cvs,
                 });
@@ -63,14 +64,14 @@ class App {
             coord: coordY,
             time: 1500
         });
-        shape.animate.width({
-            width: 100 * Math.random(),
+        shape.animate.radius({
+            radius: 100 * Math.random(),
             time: 1500
         });
-        shape.animate.height({
-            height: 100 * Math.random(),
-            time: 1500,
-        });
+        // shape.animate.height({
+        //     height: 100 * Math.random(),
+        //     time: 1500,
+        // });
     }
 }
 const app = new App;

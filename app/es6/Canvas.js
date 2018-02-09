@@ -7,10 +7,10 @@ class Canvas {
             background: properties.background || '#333333',
         }
 
-        this.offScreen = {
-            mode: properties.offScreen.mode   || 'delete',
-            time: properties.offScreen.time   || 10000
-        }
+        // this.offScreen = {
+        //     mode: properties.offScreen.mode   || 'delete',
+        //     time: properties.offScreen.time   || 10000
+        // }
 
         this.cvs = null;
         this.renderQueue = new Map();

@@ -88,17 +88,33 @@ class Rect extends Shape {
 class Circle extends Shape {
     constructor (properties) {
         super(properties);
-        this.setDrawInstructions();
+        this.init();
     }
-    setDrawInstructions () {
-        super.drawInstructions = () => {
-            const parentCtx = this.parentCanvas.ctx;
-            parentCtx.beginPath();
-            parentCtx.arc(this.props.x, this.props.y, this.props.radius, 0, 2 * Math.PI);
-            parentCtx.strokeStyle = this.props.strokeColor;
-            parentCtx.lineWidth = this.props.lineWidth;
-            parentCtx.fillStyle = this.props.fillColor;
-            parentCtx.fill();
+
+    init () {
+        super.drawInstructions = {
+            onStart: () => {
+                this.parentCanvas.ctx.moveTo(this.props.x, this.props.y);
+                this.parentCanvas.ctx.beginPath();
+            },
+
+            connect: (x, y) => this.parentCanvas.ctx.arc(this.props.x + x, this.props.y + y, this.props.radius, 0, 2 * Math.PI),
+
+            onFinish: () => {
+                this.parentCanvas.ctx.closePath();
+                this.parentCanvas.ctx.strokeStyle = this.props.strokeColor;
+                this.parentCanvas.ctx.lineWidth = this.props.lineWidth;
+                this.parentCanvas.ctx.fillStyle = this.props.fillColor;
+                this.parentCanvas.ctx.fill();
+            },
+
+            points: () => {
+                let props = this.props;
+                
+                return [
+                    {x: 0, y: 0}
+                ]
+            }
         }
     }
 }
